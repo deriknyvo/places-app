@@ -5,9 +5,9 @@ import { RouterModule, Routes } from '@angular/router';
 // Material Design
 import { MatListModule } from '@angular/material/list';
 import { MatCardModule } from '@angular/material/card';
-import { MatToolbarModule } from '@angular/material/toolbar';
-import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
+import { MatIconModule } from '@angular/material/icon';
+import { MatTooltipModule } from '@angular/material/tooltip';
 
 import { ClientsComponent } from './clients.component';
 
@@ -24,9 +24,9 @@ const routes: Routes = [
     RouterModule.forChild(routes),
     MatListModule,
     MatCardModule,
-    MatToolbarModule,
+    MatButtonModule,
     MatIconModule,
-    MatButtonModule
+    MatTooltipModule
   ]
 })
 export class ClientsModule { }
