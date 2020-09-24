@@ -9,15 +9,18 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { MatTooltipModule } from '@angular/material/tooltip';
 
-import { ClientsComponent } from './clients.component';
+import { ClientCreateComponent } from './client-create/client-create.component';
+import { ClientListComponent } from './client-list/client-list.component';
 
 const routes: Routes = [
-  { path: '', component: ClientsComponent }
+  { path: '', component: ClientListComponent },
+  { path: 'create', component: ClientCreateComponent },
 ];
 
 @NgModule({
   declarations: [
-    ClientsComponent
+    ClientCreateComponent,
+    ClientListComponent
   ],
   imports: [
     CommonModule,

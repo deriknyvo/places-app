@@ -1,0 +1,22 @@
+<div class="container">
+    <div class="header">
+      <h1>Clientes</h1>
+      <button 
+        routerLink="create"
+        matTooltip="Novo cliente" 
+        matTooltipPosition="before" 
+        mat-mini-fab 
+        color="primary">
+        <mat-icon>add</mat-icon>
+      </button>
+    </div>
+    <mat-divider class="divider"></mat-divider>
+    <mat-card>
+        <mat-selection-list [multiple]="false">
+            <mat-list-option *ngFor="let client of clients" [value]="client">
+              {{client}}
+            </mat-list-option>
+        </mat-selection-list>
+    </mat-card>
+  </div>
+  
