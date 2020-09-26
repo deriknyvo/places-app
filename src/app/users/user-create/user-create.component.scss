@@ -1,0 +1,54 @@
+.container {
+    padding: 40px 50px;
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        button {
+            margin-bottom: 16px;
+        }
+    }
+
+    .divider {
+        margin-bottom: 25px;
+    }
+}
+
+.form-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.inputs-container {
+    width: 76%;
+}
+
+.input {
+    width: 100%;
+}
+
+.input-medium {
+    width: 50%;
+}
+
+.profile-image {
+    width: 20%;
+    border-radius: 50%;
+}
+
+
+:host ::ng-deep .mat-form-field-wrapper {
+    margin: 0 8px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: flex-end;
+    margin: 10px 15px;
+
+    button {
+        margin: 0 5px;
+    }
+}

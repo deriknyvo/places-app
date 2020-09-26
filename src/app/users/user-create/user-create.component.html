@@ -1,0 +1,53 @@
+<div class="container">
+    <div class="header">
+      <h1>Novo usuário</h1>
+      <button 
+        routerLink="/users"
+        matTooltip="Voltar" 
+        matTooltipPosition="before" 
+        mat-mini-fab 
+        color="primary">
+        <mat-icon>keyboard_backspace</mat-icon>
+      </button>
+    </div>
+    <mat-divider class="divider"></mat-divider>
+    <mat-card>
+      <form>
+        <div class="form-container">
+          <img src="assets/profile/derik.jpeg" class="profile-image">
+          <div class="inputs-container">
+            <mat-form-field appearance="standard" class="input">
+              <mat-label>Nome</mat-label>
+              <input matInput>
+            </mat-form-field>
+  
+            <mat-form-field appearance="standard" class="input">
+              <mat-label>Telefone</mat-label>
+              <input matInput>
+            </mat-form-field>
+  
+            <mat-form-field appearance="standard" class="input">
+              <mat-label>E-mail</mat-label>
+              <input matInput>
+            </mat-form-field>
+
+            <mat-form-field appearance="standard" class="input-medium">
+              <mat-label>Senha</mat-label>
+              <input matInput>
+            </mat-form-field>
+  
+            <mat-form-field appearance="standard" class="input-medium">
+              <mat-label>Senha novamente</mat-label>
+              <input matInput>
+            </mat-form-field>
+          </div>
+        </div>
+
+        <div class="buttons">
+          <button mat-button routerLink="/users">Cancelar</button>
+          <button mat-raised-button color="primary">Salvar</button>
+        </div>
+      </form>
+    </mat-card>
+  </div>
+  
