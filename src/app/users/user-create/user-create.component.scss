@@ -1,3 +1,9 @@
+:host ::ng-deep {
+    .mat-form-field-wrapper {
+        margin: 0 8px;
+    }
+}
+
 .container {
     padding: 40px 50px;
 
@@ -19,28 +25,48 @@
 .form-container {
     display: flex;
     justify-content: space-around;
-}
+    align-items: center;
 
-.inputs-container {
-    width: 76%;
-}
+    .image-container {
+        width: 17%;
+        display: flex;
+        align-items: center;
+        transition: all 300ms;
 
-.input {
-    width: 100%;
-}
+        .profile-image {
+            width: 100%;
+            border-radius: 50%;
+            height: 100%;
+            transition: all 300ms;
+        }
 
-.input-medium {
-    width: 50%;
-}
+        .add-photo {
+            opacity: 0;
+            position: relative;
+            right: 58%;
+            color: white;
+        }
+    }
 
-.profile-image {
-    width: 20%;
-    border-radius: 50%;
-}
+    .image-container:hover .add-photo {
+        opacity: 1
+    }
 
+    .image-container:hover .profile-image {
+        filter: brightness(55%);
+    }
 
-:host ::ng-deep .mat-form-field-wrapper {
-    margin: 0 8px;
+    .inputs-container {
+        width: 76%;
+
+        .input {
+            width: 100%;
+        }
+        
+        .input-medium {
+            width: 50%;
+        }
+    }
 }
 
 .buttons {
